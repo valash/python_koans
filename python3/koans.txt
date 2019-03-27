@@ -1,7 +1,11 @@
 # Lines starting with # are ignored.
 koans.about_asserts.AboutAsserts
+#done
 koans.about_strings.AboutStrings
+#done
 koans.about_lists.AboutLists
+#done
+#break time
 koans.about_list_assignments.AboutListAssignments
 koans.about_dictionaries.AboutDictionaries
 koans.about_string_manipulation.AboutStringManipulation
