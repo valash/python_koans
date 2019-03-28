@@ -16,16 +16,16 @@ class AboutLists(Koan):
 
     def test_list_literals(self):
         nums = list()
-        self.assertEqual([1], nums)
+        self.assertEqual([], nums)
 
         nums[1:] = [2]
-        self.assertEqual([1, 2], nums)
+        self.assertEqual([2], nums)
 
         nums[1:] = [2]
-        self.assertListEqual([1, 2], nums)
+        self.assertListEqual([2, 2], nums)
 
         nums.append(333)
-        self.assertListEqual([1, 2, 333], nums)
+        self.assertListEqual([2, 2, 333], nums)
 
     def test_accessing_list_elements(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
@@ -38,7 +38,7 @@ class AboutLists(Koan):
     def test_slicing_lists(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
 
-        self.assertEqual('peanut', noms[0:1])
+        self.assertEqual(['peanut'], noms[0:1])
         self.assertEqual(['peanut', 'butter'], noms[0: 2])
         self.assertEqual([], noms[2: 2])
         self.assertEqual(['and', 'jelly'], noms[2: 20])
